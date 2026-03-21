@@ -1,0 +1,19 @@
+class Resort {
+    int RNo;
+    String Name;
+    float Charges;
+    int Days;
+
+    float Compute() {
+        float amount = Days * Charges;
+        return (amount > 11000) ? 1.02f * amount : amount;
+    }
+
+    void Getinfo(int r, String n, float c, int d) {
+        RNo = r; Name = n; Charges = c; Days = d;
+    }
+
+    void DispInfo() {
+        System.out.println(RNo + " " + Name + " Total: " + Compute());
+    }
+}
