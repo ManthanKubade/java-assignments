@@ -1,0 +1,4 @@
+abstract class Payment { abstract void pay(double amount); }
+class UPIPayment extends Payment {
+    void pay(double amt) { System.out.println("Paid ₹" + amt + " via UPI"); }
+}
