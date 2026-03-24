@@ -1,0 +1,7 @@
+abstract class Employee {
+    String name; int id;
+    abstract void calculateBonus(double salary);
+}
+class Manager extends Employee {
+    void calculateBonus(double s) { System.out.println("Bonus: " + (0.2 * s)); }
+}
