@@ -1,0 +1,7 @@
+abstract class Ride {
+    int distance;
+    abstract void calculateFare();
+}
+class BikeRide extends Ride {
+    void calculateFare() { System.out.println("Fare: " + (distance * 5)); }
+}
