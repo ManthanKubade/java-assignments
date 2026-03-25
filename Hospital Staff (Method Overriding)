@@ -1,0 +1,2 @@
+class Staff { void work() { System.out.println("Staff working"); } }
+class Doctor extends Staff { void work() { System.out.println("Treating patients"); } }
