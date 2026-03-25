@@ -1,0 +1,5 @@
+class Employee {
+    static int employeeCount = 0;
+    Employee() { employeeCount++; }
+    static void showCount() { System.out.println("Total: " + employeeCount); }
+}
